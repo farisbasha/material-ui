@@ -36,7 +36,7 @@ jobs:
       - run: pnpm install
       - run: pnpm release:build
       - name: Publish packages to pkg.pr.new
-        uses: mui/mui-public/.github/actions/ci-publish@d273bbedf2bc589425d71701964d01a9d67c9460 # master
+        uses: mui/mui-public/.github/actions/ci-publish@7751f042c2be2cd665a08f5b01497f688b4352b3 # master
 
   # Tests dev-only scripts across all supported dev environments
   test-dev:
@@ -116,7 +116,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Prepare for publishing
-        uses: mui/mui-public/.github/actions/publish-prepare@d273bbedf2bc589425d71701964d01a9d67c9460 # master
+        uses: mui/mui-public/.github/actions/publish-prepare@7751f042c2be2cd665a08f5b01497f688b4352b3 # master
         with:
           node-version: '22.23.5'
       - name: Dry run npm publishing
